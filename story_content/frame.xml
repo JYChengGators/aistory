@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="npxnabnsnfns10111100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
+<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="npxnabnsnfns11111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
   <layouts>
-    <layout name="npnxnanbsnfns10111100101" font="Lato" controllayout="npnxnanbsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100101" font="Lato" controllayout="pxabnsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="npxnabnsnfns10111100101" font="Lato" controllayout="npxnabnsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="npnxnanbnsnfns10111100101" font="Lato" controllayout="npnxnanbnsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100100" font="Lato" controllayout="pxabnsnfns10111100100" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="pxnanbnsnfns10111100101" font="Lato" controllayout="pxnanbnsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
-    <layout name="pnxanbnsnfns10111100101" font="Lato" controllayout="pnxanbnsnfns10111100101" colorscheme="npxnabnsnfns10111100101" string_table="npxnabnsnfns10111100101" />
+    <layout name="npnxnanbsnfns11111000101" font="Lato" controllayout="npnxnanbsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="pxabnsnfns11111000101" font="Lato" controllayout="pxabnsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="npxnabnsnfns11111000101" font="Lato" controllayout="npxnabnsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="npnxnanbnsnfns11111000101" font="Lato" controllayout="npnxnanbnsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="pxabnsnfns11111000100" font="Lato" controllayout="pxabnsnfns11111000100" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="pxnanbnsnfns11111000101" font="Lato" controllayout="pxnanbnsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
+    <layout name="pnxanbnsnfns11111000101" font="Lato" controllayout="pnxanbnsnfns11111000101" colorscheme="npxnabnsnfns11111000101" string_table="npxnabnsnfns11111000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -18,8 +18,11 @@
               <option name="title_text" value="AIStory" />
             </options>
           </option>
-          <option name="logo_enabled" value="false">
-            <options />
+          <option name="logo_enabled" value="true">
+            <options>
+              <option name="logo_url" />
+              <option name="html5_logo_url" value="mobile/6FwAPpvIsdl.png" />
+            </options>
           </option>
           <option name="sidebar_enabled" value="true">
             <options>
@@ -29,7 +32,7 @@
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="true" group="linkright" />
+              <listitem name="resources" value="false" group="linkright" />
               <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
@@ -45,12 +48,12 @@
               <option name="height" value="135" />
             </options>
           </option>
-          <option name="logoAltText" />
+          <option name="logoAltText" value="logos.png" />
         </options>
       </optiongroup>
       <optiongroup name="menuoptions">
         <options>
-          <option name="flow" value="restricted" />
+          <option name="flow" value="free" />
           <option name="wraplistitems" value="true" />
           <option name="tooltips" value="true" />
           <option name="autocollapse" value="true" />
@@ -73,7 +76,7 @@
           <option name="closed_captions" value="true" />
           <option name="settings" value="true" />
           <option name="fullScreenToggle" value="true" />
-          <option name="playbackSpeedControl" value="false" />
+          <option name="playbackSpeedControl" value="true" />
         </options>
       </optiongroup>
       <optiongroup name="bottombaroptions">
@@ -100,22 +103,22 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111100101">
+    <control_layout name="npnxnanbsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="false" />
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -125,22 +128,22 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100101">
+    <control_layout name="pxabnsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="true" />
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -150,22 +153,22 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111100101">
+    <control_layout name="npxnabnsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="false" />
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -175,22 +178,22 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111100101">
+    <control_layout name="npnxnanbnsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="false" />
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -200,22 +203,22 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100100">
+    <control_layout name="pxabnsnfns11111000100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="true" />
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -225,22 +228,22 @@
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
-    <control_layout name="pxnanbnsnfns10111100101">
+    <control_layout name="pxnanbnsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="true" />
       <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -250,22 +253,22 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pnxanbnsnfns10111100101">
+    <control_layout name="pnxanbnsnfns11111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
       <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
+      <control name="logo" enabled="true" />
       <control name="previous" enabled="true" />
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="false" />
       <control name="fullScreenToggle" enabled="true" />
-      <control name="playbackSpeedControl" enabled="false" />
+      <control name="playbackSpeedControl" enabled="true" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -277,7 +280,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npxnabnsnfns10111100101">
+    <colorscheme name="npxnabnsnfns11111000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1454,7 +1457,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npxnabnsnfns10111100101">
+    <string_table name="npxnabnsnfns11111000101">
       <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
       <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
       <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
@@ -1612,8 +1615,7 @@
       <links>
         <slidelink slideid="_player.6qdv5AwLh6d" displaytext="Opening" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6qdv5AwLh6d.6JP52KErlZr" displaytext="WELCOME LAYOUT" expand="false" type="slide" />
-            <slidelink slideid="_player.6qdv5AwLh6d.60T7GXEVn1j" displaytext="Pre-AIStory Survey" expand="false" type="slide" />
+            <slidelink slideid="_player.6qdv5AwLh6d.6JP52KErlZr" displaytext="Welcome" expand="false" type="slide" />
             <slidelink slideid="_player.6qdv5AwLh6d.6S4O6di8uxB" displaytext="Learning Objectives" expand="false" type="slide" />
           </links>
         </slidelink>
@@ -1622,11 +1624,8 @@
             <slidelink slideid="_player.6LKlNUDPUDn.6ee0PxfApM1" displaytext="Meet Devin" expand="false" type="slide" />
             <slidelink slideid="_player.6LKlNUDPUDn.6IcoaziSMjb" displaytext="Matching Hazards" expand="false" type="slide" />
             <slidelink slideid="_player.6LKlNUDPUDn.5aJMT51vAfp" displaytext="Focus Four" expand="false" type="slide" />
-            <slidelink slideid="_player.6LKlNUDPUDn.5jEyE89bvtr" displaytext="Hierarcgy of Controls" expand="false" type="slide" />
-            <slidelink slideid="_player.6LKlNUDPUDn.6fL6rhsBY3w" displaytext="Hierarcgy of Controls" expand="false" type="slide" />
+            <slidelink slideid="_player.6LKlNUDPUDn.5jEyE89bvtr" displaytext="Hierarchy of Controls" expand="false" type="slide" />
             <slidelink slideid="_player.6LKlNUDPUDn.62DQ9J4PsYQ" displaytext="Examples of Current Practices" expand="false" type="slide" />
-            <slidelink slideid="_player.6LKlNUDPUDn.6NpvZIJk2YK" displaytext="Examples of Current Practices" expand="false" type="slide" />
-            <slidelink slideid="_player.6LKlNUDPUDn.6JDlzmu2NQs" displaytext="Transition" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6XKnPsiAZcd" displaytext="A Stranger from the Future?" expand="true" type="slide">
@@ -1645,26 +1644,26 @@
             <slidelink slideid="_player.6alxKGOsnPn.6GZtqkiv22U" displaytext="Reflection" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6EgaM8NmoL1" displaytext="Let&amp;apos;s Build Some AI" expand="true" type="slide">
+        <slidelink slideid="_player.6EgaM8NmoL1" displaytext="Building AI model" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6EgaM8NmoL1.6560VzLbpA1" displaytext="Build an AI for the Site?" expand="false" type="slide" />
+            <slidelink slideid="_player.6EgaM8NmoL1.6560VzLbpA1" displaytext="Do We Need to Build AI Models by Ourselves?" expand="false" type="slide" />
             <slidelink slideid="_player.6EgaM8NmoL1.5b2ylNFG7Cy" displaytext="Introduce Google Teachable Machine" expand="false" type="slide" />
             <slidelink slideid="_player.6EgaM8NmoL1.6G0zlzROQG3" displaytext="Build Your Own Model - Purpose" expand="false" type="slide" />
             <slidelink slideid="_player.6EgaM8NmoL1.6FP8VoaHcP4" displaytext="Build Your Own Model - Reflection" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6IhTDoYOSD6" displaytext="Discuss the Results" expand="false" type="slide">
+        <slidelink slideid="_player.6IhTDoYOSD6" displaytext="Discuss the Results" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6IhTDoYOSD6.6ALzmQirSWX" displaytext="Importance of Data Quality" expand="false" type="slide" />
             <slidelink slideid="_player.6IhTDoYOSD6.6I2TB3EgB67" displaytext="Different Types of Data on Construction Sites" expand="false" type="slide" />
-            <slidelink slideid="_player.6IhTDoYOSD6.6ZwivnznRNB" displaytext="AI Model vs. Actual Needs" expand="false" type="slide" />
+            <slidelink slideid="_player.6IhTDoYOSD6.6ZwivnznRNB" displaytext="Choosing Appropriate AI Model for Actual Needs" expand="false" type="slide" />
             <slidelink slideid="_player.6IhTDoYOSD6.6PMVfdyTjjM" displaytext="Reflection" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5XnW2caajkB" displaytext="Limitations and Concerns of AI" expand="true" type="slide">
+        <slidelink slideid="_player.5XnW2caajkB" displaytext="Limitations and Concerns about AI" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5XnW2caajkB.6GtEpQaQlLB" displaytext="Reliabiliity and Over-reliance" expand="false" type="slide" />
-            <slidelink slideid="_player.5XnW2caajkB.6JYhmHgv4Ie" displaytext="Discuss about Privacy" expand="false" type="slide" />
+            <slidelink slideid="_player.5XnW2caajkB.6JYhmHgv4Ie" displaytext="Key Stakeholders of Data in Construction" expand="false" type="slide" />
             <slidelink slideid="_player.5XnW2caajkB.6Ssmc7BL1Rp" displaytext="Discuss about Privacy" expand="false" type="slide" />
             <slidelink slideid="_player.5XnW2caajkB.6pkNDzGs8bc" displaytext="Data bias" expand="false" type="slide" />
             <slidelink slideid="_player.5XnW2caajkB.6XfPKNdBVJp" displaytext="Reflection" expand="false" type="slide" />
@@ -1676,14 +1675,14 @@
             <slidelink slideid="_player.6MjH5j4TQg8.6KXcvIyrxL4" displaytext="AI literacy and On-going Discussion on AI" expand="false" type="slide" />
             <slidelink slideid="_player.6MjH5j4TQg8.67QXIuC3EQN" displaytext="Share your vision" expand="false" type="slide" />
             <slidelink slideid="_player.6MjH5j4TQg8.5jMCwSDOzhz" displaytext="Conclusion" expand="false" type="slide" />
-            <slidelink slideid="_player.6MjH5j4TQg8.5itvuJ7yjm4" displaytext="Post-AIStory Survey" expand="false" type="slide" />
-            <slidelink slideid="_player.6MjH5j4TQg8.5qaNijqgxYY" displaytext="EXIT LAYOUT" expand="false" type="slide" />
+            <slidelink slideid="_player.6MjH5j4TQg8.5dUhWnAFbGp" displaytext="AIStory Usability Survey" expand="false" type="slide" />
+            <slidelink slideid="_player.6MjH5j4TQg8.5qaNijqgxYY" displaytext="End" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Lato' style='font-size: 11px;' size='11' color='#BABBBA'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;" />
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
