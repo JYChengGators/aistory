@@ -43,6 +43,26 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 window.Script3 = function()
 {
+  var player = GetPlayer();
+var email = player.GetVar("Email");
+var timestamp = new Date().toISOString();
+
+var formData = new URLSearchParams();
+formData.append("Email", email);
+formData.append("Timestamp", timestamp);
+
+fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
+  method: "POST",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "application/json"
+  }
+});
+
+}
+
+window.Script4 = function()
+{
   function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
@@ -55,7 +75,7 @@ player.SetVar("SessionID", uuid);
 
 }
 
-window.Script4 = function()
+window.Script5 = function()
 {
   var player = GetPlayer();
 
@@ -66,7 +86,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script5 = function()
+window.Script6 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -81,7 +101,7 @@ if (incomingUserID) {
 
 }
 
-window.Script6 = function()
+window.Script7 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -89,7 +109,6 @@ var progressPoint = "module1_complete";  // Change dynamically as needed
 var timestamp = new Date().toISOString();
 
 var formData = new URLSearchParams();
-formData.append("Name", name);
 formData.append("Email", email);
 formData.append("Progress", progress);
 formData.append("Timestamp", timestamp);
@@ -104,7 +123,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script7 = function()
+window.Script8 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -127,7 +146,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script8 = function()
+window.Script9 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -150,7 +169,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script9 = function()
+window.Script10 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -173,7 +192,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script10 = function()
+window.Script11 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -196,7 +215,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script11 = function()
+window.Script12 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -219,7 +238,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script12 = function()
+window.Script13 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -242,7 +261,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 
 }
 
-window.Script13 = function()
+window.Script14 = function()
 {
   var player = GetPlayer();
 
@@ -274,7 +293,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 });
 }
 
-window.Script14 = function()
+window.Script15 = function()
 {
   var player = GetPlayer();
 
@@ -285,7 +304,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script15 = function()
+window.Script16 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -300,7 +319,7 @@ if (incomingUserID) {
 
 }
 
-window.Script16 = function()
+window.Script17 = function()
 {
   var player = GetPlayer();
 
@@ -318,7 +337,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 });
 }
 
-window.Script17 = function()
+window.Script18 = function()
 {
   var player = GetPlayer();
 
@@ -329,7 +348,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script18 = function()
+window.Script19 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -344,7 +363,7 @@ if (incomingUserID) {
 
 }
 
-window.Script19 = function()
+window.Script20 = function()
 {
   var player = GetPlayer();
 

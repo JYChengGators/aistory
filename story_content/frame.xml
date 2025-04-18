@@ -21,7 +21,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/6edZU8YcIg9.png" />
+              <option name="html5_logo_url" value="mobile/5zRvxhPvkUU.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -1621,6 +1621,7 @@
         <slidelink slideid="_player.6qdv5AwLh6d" displaytext="Opening" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6qdv5AwLh6d.5vNh5sDYC52" displaytext="Welcome" expand="false" type="slide" />
+            <slidelink slideid="_player.6qdv5AwLh6d.60T7GXEVn1j" displaytext="Pre-AIStory Survey" expand="false" type="slide" />
             <slidelink slideid="_player.6qdv5AwLh6d.6S4O6di8uxB" displaytext="Learning Objectives" expand="false" type="slide" />
           </links>
         </slidelink>
@@ -1680,6 +1681,7 @@
             <slidelink slideid="_player.6MjH5j4TQg8.6KXcvIyrxL4" displaytext="AI literacy and On-going Discussion on AI" expand="false" type="slide" />
             <slidelink slideid="_player.6MjH5j4TQg8.67QXIuC3EQN" displaytext="Share your vision" expand="false" type="slide" />
             <slidelink slideid="_player.6MjH5j4TQg8.5jMCwSDOzhz" displaytext="Conclusion" expand="false" type="slide" />
+            <slidelink slideid="_player.6MjH5j4TQg8.5itvuJ7yjm4" displaytext="Post-AIStory Survey" expand="false" type="slide" />
             <slidelink slideid="_player.6MjH5j4TQg8.5qaNijqgxYY" displaytext="End" expand="false" type="slide" />
           </links>
         </slidelink>
