@@ -31,37 +31,30 @@ window.Script2 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
-
-fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec?Email=" + encodeURIComponent(email))
-  .then(response => response.text())
-  .then(progress => {
-    console.log("Retrieved progress:", progress);
-    player.SetVar("UserProgress", progress);
-  });
-
-}
-
-window.Script3 = function()
-{
-  var player = GetPlayer();
-var email = player.GetVar("Email");
 var timestamp = new Date().toISOString();
 
 var formData = new URLSearchParams();
 formData.append("Email", email);
 formData.append("Timestamp", timestamp);
 
+// First: save email
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
+})
+.then(() => {
+  // Then: retrieve progress
+  return fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec?Email=" + encodeURIComponent(email));
+})
+.then(response => response.text())
+.then(progress => {
+  console.log("Retrieved progress:", progress);
+  player.SetVar("UserProgress", progress);
 });
 
 }
 
-window.Script4 = function()
+window.Script3 = function()
 {
   function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -75,7 +68,7 @@ player.SetVar("SessionID", uuid);
 
 }
 
-window.Script5 = function()
+window.Script4 = function()
 {
   var player = GetPlayer();
 
@@ -86,7 +79,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script6 = function()
+window.Script5 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -101,7 +94,7 @@ if (incomingUserID) {
 
 }
 
-window.Script7 = function()
+window.Script6 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -110,20 +103,17 @@ var timestamp = new Date().toISOString();
 
 var formData = new URLSearchParams();
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script8 = function()
+window.Script7 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -133,20 +123,16 @@ var timestamp = new Date().toISOString();
 var formData = new URLSearchParams();
 formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
-
 }
 
-window.Script9 = function()
+window.Script8 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -156,20 +142,17 @@ var timestamp = new Date().toISOString();
 var formData = new URLSearchParams();
 formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script10 = function()
+window.Script9 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -179,20 +162,17 @@ var timestamp = new Date().toISOString();
 var formData = new URLSearchParams();
 formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script11 = function()
+window.Script10 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -202,20 +182,17 @@ var timestamp = new Date().toISOString();
 var formData = new URLSearchParams();
 formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script12 = function()
+window.Script11 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -225,20 +202,17 @@ var timestamp = new Date().toISOString();
 var formData = new URLSearchParams();
 formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script13 = function()
+window.Script12 = function()
 {
   var player = GetPlayer();
 var email = player.GetVar("Email");
@@ -246,27 +220,25 @@ var progressPoint = "module7_complete";  // Change dynamically as needed
 var timestamp = new Date().toISOString();
 
 var formData = new URLSearchParams();
-formData.append("Name", name);
 formData.append("Email", email);
-formData.append("Progress", progress);
+formData.append("Progress", progressPoint);
 formData.append("Timestamp", timestamp);
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  body: JSON.stringify(data),
-  headers: {
-    "Content-Type": "application/json"
-  }
+  body: formData
 });
 
 }
 
-window.Script14 = function()
+window.Script13 = function()
 {
   var player = GetPlayer();
 
 var formData = new URLSearchParams();
 formData.append("Email", player.GetVar("Email"));
+formData.append("Progress", "module7_complete");
+formData.append("Timestamp", new Date().toISOString());
 formData.append("UserID", player.GetVar("UserID"));
 formData.append("MatchHazard_Attempts", player.GetVar("MatchHazard_Attempts"));
 formData.append("MatchHazard_Correct", player.GetVar("MatchHazard_Correct"));
@@ -286,6 +258,7 @@ formData.append("ExpectedOuput", player.GetVar("ExpectedOuput"));
 formData.append("ResultsReport", player.GetVar("ResultsReport"));
 formData.append("HumanRole", player.GetVar("HumanRole"));
 formData.append("AI_Concerns", player.GetVar("AI_Concerns"));
+formData.append("Future_AI", player.GetVar("Future_AI"));
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
@@ -293,7 +266,7 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
 });
 }
 
-window.Script15 = function()
+window.Script14 = function()
 {
   var player = GetPlayer();
 
@@ -304,7 +277,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script16 = function()
+window.Script15 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -319,7 +292,7 @@ if (incomingUserID) {
 
 }
 
-window.Script17 = function()
+window.Script16 = function()
 {
   var player = GetPlayer();
 
@@ -329,15 +302,14 @@ var data = {
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
-  mode: "no-cors",
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
-  body: new URLSearchParams(data)
-});
+  body: formData
+})
+.then(response => response.text())
+.then(data => console.log("Response from GAS:", data))
+.catch(error => console.error("Error:", error));
 }
 
-window.Script18 = function()
+window.Script17 = function()
 {
   var player = GetPlayer();
 
@@ -348,7 +320,7 @@ window.addEventListener("message", function(event) {
 }, false);
 }
 
-window.Script19 = function()
+window.Script18 = function()
 {
   function getQueryParam(param) {
   var url = new URL(window.location.href);
@@ -363,7 +335,7 @@ if (incomingUserID) {
 
 }
 
-window.Script20 = function()
+window.Script19 = function()
 {
   var player = GetPlayer();
 

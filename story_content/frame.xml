@@ -15,13 +15,13 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="AIStory" />
+              <option name="title_text" value="aistory" />
             </options>
           </option>
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/5zRvxhPvkUU.png" />
+              <option name="html5_logo_url" value="mobile/6Ey4ePIVyXJ.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
