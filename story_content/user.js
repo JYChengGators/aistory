@@ -52,6 +52,9 @@ fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSs
   player.SetVar("UserProgress", progress);
   player.SetVar("ProgressLoaded", true); // unlocks navigation
 });
+.catch(error => {
+  console.error("Fetch error:", error);
+});
 
 
 }
