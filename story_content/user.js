@@ -37,20 +37,22 @@ var formData = new URLSearchParams();
 formData.append("Email", email);
 formData.append("Timestamp", timestamp);
 
-// First: save email
-fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
+// Save email
+fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
   method: "POST",
   body: formData
 })
 .then(() => {
   // Then: retrieve progress
-  return fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec?Email=" + encodeURIComponent(email));
+  return fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?Email=" + encodeURIComponent(email));
 })
 .then(response => response.text())
 .then(progress => {
   console.log("Retrieved progress:", progress);
   player.SetVar("UserProgress", progress);
+  player.SetVar("ProgressLoaded", true); // unlocks navigation
 });
+
 
 }
 
@@ -296,9 +298,31 @@ window.Script16 = function()
 {
   var player = GetPlayer();
 
-var data = {
-  "PostUserID": player.GetVar("PostUserID"),
-};
+var formData = new URLSearchParams();
+formData.append("Email", player.GetVar("Email"));
+formData.append("Progress", "module7_complete");
+formData.append("Timestamp", new Date().toISOString());
+formData.append("UserID", player.GetVar("UserID"));
+formData.append("PostUserID", player.GetVar("PostUserID"));
+formData.append("MatchHazard_Attempts", player.GetVar("MatchHazard_Attempts"));
+formData.append("MatchHazard_Correct", player.GetVar("MatchHazard_Correct"));
+formData.append("HoC_Attempts", player.GetVar("HoC_Attempts"));
+formData.append("HoC_Correct", player.GetVar("HoC_Correct"));
+formData.append("Costumer_Attempts", player.GetVar("Costumer_Attempts"));
+formData.append("Costumer_Correct", player.GetVar("Costumer_Correct"));
+formData.append("Music_Attempts", player.GetVar("Music_Attempts"));
+formData.append("Music_Correct", player.GetVar("Music_Correct"));
+formData.append("Home_Attempts", player.GetVar("Home_Attempts"));
+formData.append("Home_Correct", player.GetVar("Home_Correct"));
+formData.append("AI4Safety_Before_Reflection", player.GetVar("AI4Safety_Before_Reflection"));
+formData.append("AI4Safety_After_Reflection", player.GetVar("AI4Safety_After_Reflection"));
+formData.append("ModelPurpose", player.GetVar("ModelPurpose"));
+formData.append("InputNeeded", player.GetVar("InputNeeded"));
+formData.append("ExpectedOuput", player.GetVar("ExpectedOuput"));
+formData.append("ResultsReport", player.GetVar("ResultsReport"));
+formData.append("HumanRole", player.GetVar("HumanRole"));
+formData.append("AI_Concerns", player.GetVar("AI_Concerns"));
+formData.append("Future_AI", player.GetVar("Future_AI"));
 
 fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
