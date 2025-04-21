@@ -38,13 +38,13 @@ formData.append("Email", email);
 formData.append("Timestamp", timestamp);
 
 // Save email
-fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec", {
   method: "POST",
   body: formData
 })
 .then(() => {
   // Then: retrieve progress
-  return fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?Email=" + encodeURIComponent(email));
+  return fetch("https://script.google.com/macros/s/AKfycbzam30ehgJt4jgFN8mTM6OElrbfzLPQSsyRr09Bsm7wmO3n5VavNhyDwRcU4e0Xwkjzig/exec?Email=" + encodeURIComponent(email));
 })
 .then(response => response.text())
 .then(progress => {
